@@ -1,0 +1,62 @@
+input{
+    height:20px;
+    width:20px;
+    vertical-align: middle;
+}
+.big_text{
+    font-size: 18px;
+}
+#result_four{
+    color:black;
+    font-size: 12;
+}
+#resultfour{
+    color:black;
+    font-size: 12;
+}
+#popup{
+    position: fixed;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:400px;
+    padding:50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: lightpink;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+    font-size: 16px;
+}
+#popup.active{
+    top:50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 1;
+    font-size: 16px;
+}
+#popupone{
+    position: fixed;
+    top:20%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:400px;
+    padding:50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: lightpink;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+    font-size: 16px;
+}
+#popupone.active{
+    top:30%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 1;
+    font-size: 16px;
+}

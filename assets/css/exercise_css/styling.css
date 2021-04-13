@@ -1,0 +1,37 @@
+.components{
+    background-color: #203354;
+    border-radius: 10px;
+  }
+  .img{
+    border-radius:50%;
+  }
+.stopwatch {
+display: grid;
+grid-row-gap: 23px;
+width: 100%;
+padding-top: 25px;
+}
+.time {
+font-family: "Roboto Mono", monospace;
+font-weight: 300;
+font-size: 48px;
+}
+.controls {
+display: flex;
+justify-content: space-between;
+width: 187px;
+}
+button {
+cursor: pointer;
+background: transparent;
+padding: 0;
+border: none;
+margin: 0;
+outline: none;
+}
+#playButton {
+display: block;
+}
+#pauseButton {
+display: none;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    FitBit
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link href="../assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <style>
+    .main_title{
+      color:white;
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body class="offline-doc dark-edition">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
+    <div class="container-fluid">
+      <div class="navbar-wrapper">
+        <a class="main_title" class="navbar-brand" href="javascript:void(0)"><b>&nbsp;&nbsp;F I T B I T</b></a>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <div class="page-header clear-filter">
+    <div class="page-header-image" style="background-image: url('../assets/img/sidebar-1.jpg');"></div>
+    <div class="content-center">
+      <div class="col-md-8 ml-auto mr-auto">
+        <div class="brand">
+          
+          <div class="row mt-5">
+            <div class="col-md-6 m-auto">
+              <div class="card card-body" style="width:max-content">
+                <h1 class="text-center mb-3" style="color: white;">
+                  <i class="fas fa-user-plus"></i> Register
+                </h1>
+                <% include ./partials/messages %>
+                <form action="/users/register" method="POST">
+                  <div class="form-group">
+                    <label for="name"></label>
+                    <input
+                      type="name"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Enter Name"
+                      value="<%= typeof name != 'undefined' ? name : '' %>"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email"></label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Enter Email"
+                      value="<%= typeof email != 'undefined' ? email : '' %>"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password"></label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      class="form-control"
+                      placeholder="Create Password"
+                      value="<%= typeof password != 'undefined' ? password : '' %>"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password2"></label>
+                    <input
+                      type="password"
+                      id="password2"
+                      name="password2"
+                      class="form-control"
+                      placeholder="Confirm Password"
+                      value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">
+                    Register
+                  </button>
+                </form>
+                <p class="lead mt-4" style="color: white;">Have An Account? <a href="/users/login" style="color: powderblue;">Login</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/js/exercise_script/calander.js"></script>
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="https://unpkg.com/default-passive-events"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="../assets/js/plugins/chartist.min.js"></script>
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <script src="../assets/js/material-dashboard.js?v=2.1.0"></script>
+  <script src="../assets/demo/demo.js"></script>
+  <script src="../assets/js/exercise_script/script_one.js"></script>
+</body>
+
+</html>
