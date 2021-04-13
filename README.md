@@ -33,7 +33,7 @@ FitBit-2point0 is a fitness app that takes care of your health by providing you 
 
 ## necessary changes
 
-- Replace `"main": "index.js" to "main": "app.js" in package.json`
+- Replace <br/>`"main": "index.js" to "main": "app.js" in package.json`
 - Add<br/>
   `"scripts": {
     "start": "node app.js",
@@ -46,4 +46,4 @@ FitBit-2point0 is a fitness app that takes care of your health by providing you 
 
 ## Live Demo
 
-- Live Demo Of App- [FitBit-2point](https://fitbit-2point0.herokuapp.com/)
+- Live Demo Of App- [FitBit-2point0](https://fitbit-2point0.herokuapp.com/)
