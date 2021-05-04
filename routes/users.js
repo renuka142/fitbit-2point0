@@ -88,7 +88,7 @@ router.post('/login', (req, res, next) => {
   passport.authenticate('local', {
     successRedirect: '/exercise/about.html',
     failureRedirect: '/users/login',
-    failureFlash: true
+    failureFlash: true //Fash error msg as that email is not registered
   })(req, res, next);
 });
 
