@@ -14,17 +14,21 @@ router.get('/register', forwardAuthenticated, (req, res) => res.render('register
 
 // Register
 router.post('/register', (req, res) => {
+  //pulling variables out from req.body
   const { name, email, password, password2 } = req.body;
+  
+  //----validation starts-------
   let errors = [];
-
+  
+  //check required fields
   if (!name || !email || !password || !password2) {
     errors.push({ msg: 'Please enter all fields' });
   }
-
+  //check password match
   if (password != password2) {
     errors.push({ msg: 'Passwords do not match' });
   }
-
+  //check the password length
   if (password.length < 6) {
     errors.push({ msg: 'Password must be at least 6 characters' });
   }
