@@ -1,54 +1,52 @@
-var years=["weights","reps","distance"];
-var standard=[];
-var resistance=[];
-var cardio=[]; 
+let parameter=["weights","reps","distance"];
+let standard=[];
+let resistance=[];
+let cardio=[]; 
 
 function display(){
-var standard=[];
-var resistance=[];
-var cardio=[]; 
 
-standard.push(document.getElementById("wg").value);
-standard.push(document.getElementById("rg").value);
-standard.push(document.getElementById("dg").value);
+    standard.push(document.getElementById("ws").value);
+    standard.push(document.getElementById("rs").value);
+    standard.push(document.getElementById("ds").value);
 
 
-resistance.push(document.getElementById("wo").value);
-resistance.push(document.getElementById("ro").value);
-resistance.push(document.getElementById("do").value);
+    resistance.push(document.getElementById("wr").value);
+    resistance.push(document.getElementById("rr").value);
+    resistance.push(document.getElementById("dr").value);
 
 
-cardio.push(document.getElementById("ws").value);
-cardio.push(document.getElementById("rs").value);
-cardio.push(document.getElementById("ds").value);
+    cardio.push(document.getElementById("wc").value);
+    cardio.push(document.getElementById("rc").value);
+    cardio.push(document.getElementById("dc").value);
 
 
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
-    type:'line',
-    data:{
-        labels:years,
-        datasets:[
-            {
-                data:standard,
-                label:"Standard",
-                borderColor:"yellow",
-                fill: false,
-            },
-            {
-                data:resistance,
-                label:"Resistance",
-                borderColor:"red",
-                fill:false,
-            },
-            {
-                data:cardio,
-                label:"Cardio",
-                borderColor:"lightgreen",
-                fill:false,
-            }
-        ]
-    }
-});
+    const ctx = document.getElementById("myChart");
+    const myChart = new Chart(ctx, {
+        type:'line',
+        data:{
+            //labels: for X axis 
+            labels:parameter,
+            datasets:[
+                {
+                    data:standard,
+                    label:"Standard",
+                    borderColor:"yellow",
+                    fill: false,
+                },
+                {
+                    data:resistance,
+                    label:"Resistance",
+                    borderColor:"red",
+                    fill:false,
+                },
+                {
+                    data:cardio,
+                    label:"Cardio",
+                    borderColor:"lightgreen",
+                    fill:false,
+                }
+            ]
+        }
+    });
 
 }
