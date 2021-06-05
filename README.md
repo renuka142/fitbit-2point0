@@ -28,7 +28,7 @@ FitBit-2point0 is a fitness app that takes care of your health by providing you 
 
 - run `npm init -y`
 
-- To install dependencies and run the storybooks for all packages in this repository:<br/>
+- To install dependencies in this repository:<br/>
   `npm i express bcryptjs passport passport-local express-ejs-layouts mongoose connect-flash express-session`
 
 ## necessary changes
