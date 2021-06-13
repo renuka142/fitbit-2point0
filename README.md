@@ -10,6 +10,8 @@ FitBit-2point0 is a fitness app that takes care of your health by providing you 
 
 ## Features
 
+- Allows users to register themselves ( The registered user is reflected in MongoDB database )
+- User authentification ( login / logout )
 - Standard Exercises- a must do exercise list
 - Customized Exercises- exercise based on areas you want to work on
 - Quaratine MixUp- exercise based on your Quaratine Life
@@ -34,15 +36,10 @@ FitBit-2point0 is a fitness app that takes care of your health by providing you 
 ## necessary changes
 
 - Replace <br/>`"main": "index.js" to "main": "app.js" in package.json`
-- Add<br/>
-  `"scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
-  },`
-  
+
 ## run the code
 
-- run the code using `npm run dev`
+- run the code using `npm start`
 
 ## Live Demo
 
